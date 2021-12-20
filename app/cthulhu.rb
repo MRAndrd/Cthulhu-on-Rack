@@ -51,6 +51,8 @@ class Cthulhu
 
     when '/change'
       return Logic.change_params(@request, 'mood') if @request.params['mood']
+      return Logic.change_params(@request, 'lives') if @request.params['lives']
+      return Logic.change_params(@request, 'powers') if @request.params['powers']
       return Logic.change_params(@request, 'stuff_in_belly') if @request.params['stuff_in_belly']
       return Logic.change_params(@request, 'stuff_in_intestine') if @request.params['stuff_in_intestine']
       return Logic.change_params(@request, 'energy') if @request.params['energy']
