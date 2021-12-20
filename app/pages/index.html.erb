@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cthulhugochi</title>
+  </head>
+
+  <body>
+  <h1> <%= name %> Народжений!</h1>
+  <img src="https://i.pinimg.com/originals/cb/43/9f/cb439f890730755a8f264b06bf64aa47.jpg" alt="Cthulhu" width="600" height="350">
+
+  <h3>lives   <%= get('lives')  %></h3>
+  <h3>Настрій <%= get('mood')%></h3>
+  <h3>Насиченість   <%= get('stuff_in_belly') %></h3>
+  <h3>бажання сходити в туалет  <%= get('stuff_in_intestine') %></h3>
+  <h3>енергія   <%= get('energy') %></h3>
+  <h3>сили   <%= get('powers') %></h3>
+  <h3>жага крові  <%= get('blood_lust') %></h3>
+  <h3>чистота   <%= get('cleanness') %></h3>
+  <h3>інтелект   <%= get('intelligence') %></h3>
+
+<div class="row" >
+  <form action="/change" method="get">
+
+    <button type="submit"  name="lives" value="lives">lives</button>
+
+    <button type="submit"  name="mood" value="mood">Mood</button>
+
+    <button type="submit"  name="stuff_in_belly" value="stuff_in_belly">Stuff in belly</button>
+
+    <button type="submit"  name="stuff_in_intestine" value="stuff_in_intestine">Stuff in Inestine</button>
+
+    <button type="submit"  name="energy" value="energy">energy</button>
+
+    <button type="submit"  name="powers" value="powers">powers</button>
+
+    <button type="submit"  name="blood_lust" value="blood_lust">blood_lust</button>
+
+    <button type="submit"  name="cleanness" value="cleanness">cleanness</button>
+
+    <button type="submit"  name="intelligence" value="intelligence">intelligence</button>
+
+  </form>
+  
+  <form action="/exit" method="get">
+
+    <button type="submit"  name="exit" value="exit">exit</button>
+
+  </form>
+
+  </body>
+</html>
